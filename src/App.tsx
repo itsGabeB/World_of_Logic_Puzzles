@@ -1,11 +1,16 @@
+import { Routes, Route } from 'react-router'
+import Home from './pages/Home.tsx'
+import Games from './pages/Games.tsx'
+import LightsOut from './pages/LightsOut.tsx'
 import './App.css'
 
 function App() {
   return (
-    <div className="title">
-      <span>world of logic puzzles</span>
-      <button>Play</button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/games" element={<Games />} />
+      <Route path="/games/LightsOut" element={<LightsOut />} />
+    </Routes>
   )
 }
 

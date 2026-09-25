@@ -10,7 +10,7 @@ function Games() {
         <li>Sudoku</li>
         <li>Pipes</li>
         <li onClick={() => navigate('/games/LightsOut')}>Lights Out</li>
-        <li>Minesweeper</li>
+        <li onClick={() => navigate('/games/Minesweeper')}>Minesweeper</li>
         <li>Shikaku</li>
       </ul>
       <Link to="/">Back</Link>

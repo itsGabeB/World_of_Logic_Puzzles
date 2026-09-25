@@ -1,0 +1,31 @@
+.minesweeper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.board {
+  display: grid;
+  gap: 2px;
+}
+
+/* Empty buttons collapse to nothing, so the size has to be set explicitly. */
+.cell {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.cell.hidden {
+  background: #bbb;
+}
+
+.cell.revealed {
+  background: #e8e8e8;
+}

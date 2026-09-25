@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router'
 import Home from './pages/Home.tsx'
 import Games from './pages/Games.tsx'
 import LightsOut from './pages/LightsOut.tsx'
+import Minesweeper from './pages/Minesweeper.tsx'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/games" element={<Games />} />
       <Route path="/games/LightsOut" element={<LightsOut />} />
+      <Route path="/games/Minesweeper" element={<Minesweeper />} />
     </Routes>
   )
 }
